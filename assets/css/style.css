@@ -1,0 +1,415 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-normal {
+    font-style: normal !important;
+}
+
+.text margin {
+    margin: 15px 0px;
+}
+
+.section-white {
+    background-color: #fff !important;
+}
+
+.row {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 20px;
+}
+
+.col {
+    float: left;
+    padding: 0px 8px;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.33333%;
+}
+
+/* Main */
+#main {
+
+}
+
+#header {
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    padding: 0px 24px;
+    position: relative;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    align-content: center;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#nav li:hover {
+    background-color: gainsboro;
+    color: black;
+    cursor: pointer;
+}
+
+#nav li:hover a {
+    color: black;
+}
+
+#nav .subNav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgb(163, 163, 163);
+}
+
+#nav .subNav li {
+    width: 100%;
+    padding: 0px 16px;
+}
+
+#nav li:hover .subNav {
+    display: block;
+}
+
+#nav .subNav li a {
+    color: black;
+    text-transform: none;
+    line-height: 36px;
+}
+
+#header #search {
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 46px;
+    padding: 0px 20px;
+
+}
+
+#header #search:hover {
+    background-color: #f44336!important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+#slider {
+    margin-top: 46px;
+    /* min-height: 500px; */
+    padding-top: 50%;
+    background: url(/assets/img/PALMARES-MESSI-scaled.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 0;
+    padding: 32px 16px;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    color: #fff;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    color: #fff;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+
+#content {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 64px 6px 40px;
+    text-align: center;
+}
+
+.content-section .heading-section {
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.content-section .sub-heading-section {
+    opacity: 0.6;
+    font-size: 15px;
+    margin: 15px 0px;
+    font-style: italic;
+}
+
+.content-section .about-section {
+    text-align: justify;
+    font-size: 15px;
+    margin: 15px 0px;
+    line-height: 1.5;
+}
+
+.content-section .list-section {
+    
+}
+
+.clear {
+    clear: both;
+    display: table;
+}
+
+
+.list-section .list {
+    
+}
+
+.imgAbout {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.content-section .month-list {
+    background-color: white;
+    color: gray;
+    list-style-type: none;
+    text-align: left;
+    border: 1px solid gainsboro;
+}
+
+.month-list .month-item {
+    display: list-item;
+    unicode-bidi: isolate;
+    border: 1px solid gainsboro;
+    padding: 8px 16px;
+}   
+
+.month-item .over-item {
+    color: white;
+    background-color: red;
+    margin-left: 16px;
+    padding: 4px 8px;
+}
+
+.month-item .left-item {
+    float: right; 
+    color: white;
+    background-color: black;
+    margin-right: 12px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+}
+
+.content-section .place-list {
+
+}
+
+.place-list .place-item {
+    
+}
+
+.place-item .imgAbout:hover {
+    opacity: 70%;
+}
+
+.place-detail {
+    background-color: white;
+    color: black;
+    padding: 4px 8px;
+    text-align: left;
+}
+
+.place-detail p {
+    margin: 15px 0px;
+}
+
+.place-detail .ticket-button {
+    width: 107.7px;
+    height: 38.5px;
+    background-color: black;
+    color: white;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border: none;
+}
+
+.place-detail .ticket-button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.info-contact {
+    width: 49.99999%;
+    font-size: 18px;
+    float: left;
+    text-align: left;
+}
+
+#footer {
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    background-color: #fff;
+    margin: auto;
+    display: block;
+    position: relative;
+    animation: modalAppear .5s;
+}
+
+.modal-header {
+    background-color: #009986;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.modal-close {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: inherit;
+    padding: 8px 16px;
+    font-size: 24px;
+}
+
+.modal-heading {
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.modal-body {
+    padding: 0.01em 16px;
+}
+
+.modal-section {
+    margin: 15px 0px;
+}
+
+.modal-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.modal-pay {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 16px 0px;
+    background-color: #009986;
+    border: none;
+    font-size: 15px;
+}
+
+.modal-close-btn {
+    display: inline-block;
+    background-color: #f44336;
+    margin: 16px 0px;
+    padding: 8px 16px;
+    border: none;
+}
+
+.modal-help {
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    margin: 16px 0px;
+}
+
+.btn {
+    color: #fff;
+    font-weight: 400;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+@keyframes modalAppear {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
