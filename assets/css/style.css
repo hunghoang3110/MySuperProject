@@ -32,10 +32,14 @@ html, body {
 }
 
 .row {
-    margin-top: 32px;
     margin-left: -8px;
     margin-right: -8px;
-    margin-bottom: 20px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
@@ -53,6 +57,33 @@ html, body {
 
 .col-3 {
     width: 33.33333%;
+}
+
+.mg-hor {
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.pull-left {
+    text-align: left !important;
+}
+
+.hov:hover {
+    opacity: 0.4;
 }
 
 /* Main */
@@ -175,6 +206,7 @@ html, body {
 #content .content-section {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     max-width: 800px;
     padding: 64px 6px 40px;
     text-align: center;
@@ -199,10 +231,6 @@ html, body {
     line-height: 1.5;
 }
 
-.content-section .list-section {
-    
-}
-
 .clear {
     clear: both;
     display: table;
@@ -216,7 +244,7 @@ html, body {
 .imgAbout {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     border-radius: 4px;
     vertical-align: middle;
     border-style: none;
@@ -256,18 +284,6 @@ html, body {
     text-align: center;
 }
 
-.content-section .place-list {
-
-}
-
-.place-list .place-item {
-    
-}
-
-.place-item .imgAbout:hover {
-    opacity: 70%;
-}
-
 .place-detail {
     background-color: white;
     color: black;
@@ -302,8 +318,40 @@ html, body {
     text-align: left;
 }
 
-#footer {
+.form-control {
+    padding: 11px;
+    border: solid 1px #ccc;
+    width: 100%;
+}
 
+.contact-form-btn{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    float: right;
+
+}
+
+.map-section {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+#footer .social-list a {
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#footer .copyright {
+    font-size: 15px;
+    color: #000;
 }
 
 .modal {
